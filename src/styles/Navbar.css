@@ -1,0 +1,53 @@
+.navbar{
+    background-color: var(--background);
+    height: 10vh;
+    width: 100vw;
+    color: var(--primary);
+    padding: 0 0 0 8%;
+    border-bottom: 4px solid var(--primary);
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    flex: 0.4;
+    font-family: var(--pixel);
+    font-size: 1.4rem;
+    text-shadow: 2px 2px #fbfe4ce3;
+}
+.menu{
+    flex: 0.6;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.menu-item{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-left: 4px solid var(--primary);
+}
+.menu-item:hover{
+    cursor: pointer;
+}
+
+
+
+#ham-icon{
+    display: none;
+    color: var(--primary);
+}
+
+@media only screen and (max-width:720px) {
+    #ham-icon{
+        display: unset;
+    }
+}
+
+

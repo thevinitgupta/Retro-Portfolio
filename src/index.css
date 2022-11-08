@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;600&family=Bungee&family=Press+Start+2P&display=swap');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+
+  /* fonts */
+  --baloo: 'Baloo Chettan 2', cursive;
+  --bungee: 'Bungee', cursive;
+  --pixel: 'Press Start 2P', cursive;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+[data-theme="light"] {
+  --color-foreground-accent: #111111;
+  --primary: #000000;
+  --secondary : #303030;
+  --hero : #6652e4;
+  --hero-light : #6652e489;
+  --background: #fdfdfd;
+}
+
+[data-theme="dark"] {
+  --foreground-accent: #eeeeee;
+  --primary: #ffffff;
+  --background: #241414;
+}
+
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing: border-box;
+  font-family: var(--baloo);
+}
+
+html{
+  background-image: var(--background);
+}
+body {
+  background-image: var(--background);
+}
+
+
