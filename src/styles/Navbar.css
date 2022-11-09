@@ -39,14 +39,48 @@
 
 
 
-#ham-icon{
+#ham-icon, #cross-icon{
     display: none;
     color: var(--primary);
 }
 
+.menu-sm{
+    display: none;
+}
+
 @media only screen and (max-width:720px) {
+    .menu-sm{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--background);
+        width: 100vw;
+        height: 100vh;
+        z-index: 20;
+    }
+    .menu-item{
+        height: 20%;
+        border-left: none;
+        font-size: 3rem;
+        font-weight: 400;
+    }
     #ham-icon{
         display: unset;
+        margin-right: 4%;
+    }
+    #cross-icon{
+        display: unset;
+        position: absolute;
+        top : 5%;
+        left: 8%;
+    }
+    #ham-icon:hover{
+        cursor: pointer;
+    }
+    .menu-lg{
+        display: none;
     }
 }
 
