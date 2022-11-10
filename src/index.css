@@ -21,6 +21,8 @@
   --hero : #6652e4;
   --hero-light : #6652e489;
   --background: #fdfdfd;
+  --sky-blue : #6FEDD6;
+  --bright-yellow : #FAFE4C;
 }
 
 [data-theme="dark"] {

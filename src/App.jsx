@@ -18,6 +18,7 @@ function App() {
     <div className="App" data-theme={theme}>
       <Navbar />
       <Hero/>
+      <Experience/>
     </div>
   )
 }

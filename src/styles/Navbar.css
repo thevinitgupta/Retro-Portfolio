@@ -1,13 +1,15 @@
 .navbar{
     background-color: var(--background);
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     color: var(--primary);
     padding: 0 0 0 8%;
     border-bottom: 4px solid var(--primary);
     display : flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 5;
 }
 #logo {
     flex: 0.4;
