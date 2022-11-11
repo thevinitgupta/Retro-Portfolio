@@ -1,8 +1,10 @@
-const Window = ({head, body, img, backgroundColor, margin, color, height, width}) => {
+const Window = ({head, body, img, backgroundColor, margin, color, height, width, minHeight, minWidth}) => {
 
     const style = {
         height,
         width,
+        minHeight, 
+        minWidth,
         backgroundColor : `var(${backgroundColor})`,
         color,
         border : `3px solid var(${color})`,
