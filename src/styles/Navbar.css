@@ -60,10 +60,10 @@
         background-color: var(--background);
         width: 100vw;
         height: 100vh;
-        z-index: 20;
+        z-index: 25;
     }
     .menu-item{
-        height: 20%;
+        flex: 1;
         border-left: none;
         font-size: 3rem;
         font-weight: 400;

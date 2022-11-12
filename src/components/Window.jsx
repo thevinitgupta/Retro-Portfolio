@@ -1,10 +1,13 @@
-const Window = ({head, body, img, backgroundColor, margin, color, height, width, minHeight, minWidth}) => {
+import { useState, useEffect } from "react";
+
+const Window = ({head, body, img, backgroundColor, margin, color, height, width, minHeight, maxWidth}) => {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
     const style = {
         height,
         width,
         minHeight, 
-        minWidth,
+        maxWidth,
         backgroundColor : `var(${backgroundColor})`,
         color,
         border : `3px solid var(${color})`,
@@ -34,8 +37,8 @@ const Window = ({head, body, img, backgroundColor, margin, color, height, width,
 
     const WindowData = () => (
         <>
-            <div style={{fontWeight:"600", fontSize:"1.8rem",marginBottom : "10px", padding : "2% 4%"}}>{head}</div>
-            <div style={{fontSize:"1.4rem", padding : "2% 4%"}}>{body}</div>
+            <div style={{fontWeight:"600", fontSize:`${screenWidth < 520 ? "1.5rem" : "1.8rem"}`,marginBottom : "10px", padding : "2% 4%"}}>{head}</div>
+            <div style={{fontSize:`${screenWidth < 520 ? "1.1rem" : "1.4rem"}`, padding : "2% 4%"}}>{body}</div>
         </>
     );
 
@@ -52,6 +55,14 @@ const Window = ({head, body, img, backgroundColor, margin, color, height, width,
         width : "100%",
         height : "100%"
     }
+
+    const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+    }
+
+    useEffect(()=>{
+        window.addEventListener("resize",handleResize);
+    },[])
 
     return (
         <div className="window" style={style}>
