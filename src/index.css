@@ -23,6 +23,9 @@
   --background: #fdfdfd;
   --sky-blue : #6FEDD6;
   --bright-yellow : #FAFE4C;
+  --bright-green : #93FF6D;
+  --bright-orange : #FF941B;
+  --bright-red : #F8485E;
 }
 
 [data-theme="dark"] {
