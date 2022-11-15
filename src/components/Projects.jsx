@@ -14,15 +14,29 @@ const Projects = () =>{
                 <div className="front">
                     <div className="front-head">Pigshell</div>
                     <div className="front-body">
-                        Converts boring images to ASCII based
-                        
+                        Convert boring images to ASCII based media
+                        <br/>Tech Stack : <br/>ReactJS <br/> Firebase
                     </div>
                 </div>
                 <div className="back">
                     <h2></h2>
-                    <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+                    <p>Features include converting images and live video into ASCII based media. Users can also create accounts and upload their pics to access from anywhere</p>
                 </div>
                 </div>
+                <div className="card">
+                <div className="front" style={{backgroundColor : "#AC63ED"}}>
+                    <div className="front-head">Pigshell</div>
+                    <div className="front-body">
+                        Convert boring images to ASCII based media
+                        <br/>Tech Stack : <br/>ReactJS <br/> Firebase
+                    </div>
+                </div>
+                <div className="back">
+                    <h2></h2>
+                    <p>Features include converting images and live video into ASCII based media. Users can also create accounts and upload their pics to access from anywhere</p>
+                </div>
+                </div>
+                
             </div>
         </div>
     )
