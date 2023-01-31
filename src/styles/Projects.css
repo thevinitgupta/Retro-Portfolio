@@ -24,8 +24,10 @@
     flex-wrap: wrap;
 }
 .card{
-    width: 32rem;
-    height: 24rem;
+    width: 35%;
+    height: 30%;
+    min-width: 400px;
+    min-height: 280px;
     background-color: transparent;
     border: none;
     position: relative;
@@ -114,5 +116,63 @@
     position: relative;
 }
 
+@media only screen and (max-width : 950px) {
+    .projects-head{
+        flex: 0.1;
+        font-size: 2.5rem;
+        line-height: 2rem;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        z-index: 5;
+    } 
+    .projects-body{
+        flex: 0.8;
+    }
+    .arrow{
+        height: 80px;
+        width: 80px;
+        top : -15%;
+    }
+    .projects-all{
+        font-size: 2rem;
+    }
+    
+}
 
+@media only screen and (max-width : 800px){
+    .projects-body{
+        gap : 1%;
+    }
+    .projects{
+        min-height: 100vh;
+    }
+    .pigshell{
+        margin-top: 2%;
+    }   
+    .card {
+        width : 45%;
+    }
+    .projects-all{
+        bottom: -5px;
+    }
+}
+
+@media only screen and (max-width : 540px) {
+    .projects-head{
+        font-size: 1.8rem;
+        line-height: 1.3rem;
+    } 
+    .projects-body{
+        align-items: center;
+    }
+    .card{
+        font-size: 1.2rem;
+        min-width: 320px;
+        min-height: 220px;
+    }
+    .front-head{
+        font-size: 1.8rem;
+    }    
+}
   

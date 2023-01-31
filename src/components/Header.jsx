@@ -1,4 +1,4 @@
-const Header = ({fontSize, color, shadow, font, transform, margin, p1, p2}) => {
+const Header = ({fontSize, color, shadow, font, transform, margin, p1, p2=""}) => {
     const style = {
         color : `var(${color})`,
         fontFamily : `var(${font})`,
@@ -9,8 +9,8 @@ const Header = ({fontSize, color, shadow, font, transform, margin, p1, p2}) => {
     return (
         <div className="header" style={{...style}}>
             {p1}
-            <br/>
-            {p2}
+            {p2.length>0 && <br/>}
+            {p2.length>0 && p2}
         </div>
     )
 }

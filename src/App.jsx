@@ -20,6 +20,7 @@ function App() {
       <Hero />
       <Experience />
       <Projects/>
+      <About/>
     </div>
   )
 }
