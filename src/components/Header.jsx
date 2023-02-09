@@ -10,7 +10,7 @@ const Header = ({fontSize, color, shadow, font, transform, margin, p1, p2=""}) =
         <div className="header" style={{...style}}>
             {p1}
             {p2.length>0 && <br/>}
-            {p2.length>0 && p2}
+            {p2.length>0 && `${p2}`}
         </div>
     )
 }
