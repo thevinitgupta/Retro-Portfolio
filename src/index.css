@@ -13,6 +13,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --color-foreground-accent: #111111;
+  --primary: #000000;
+  --secondary : #303030;
+  --hero : #6652e4;
+  --hero-light : #6652e489;
+  --background: #fdfdfd;
+  --sky-blue : #6FEDD6;
+  --bright-yellow : #FAFE4C;
+  --bright-green : #93FF6D;
+  --bright-orange : #FF941B;
+  --bright-red : #F8485E;
+  --bright-blue : #4C30FF;
 }
 [data-theme="light"] {
   --color-foreground-accent: #111111;
@@ -32,7 +44,16 @@
 [data-theme="dark"] {
   --foreground-accent: #eeeeee;
   --primary: #ffffff;
-  --background: #241414;
+  --background: #0a0a0a;
+  --secondary : #f2f2f2;
+  --hero : #6652e4;
+  --hero-light : #6652e489;
+  --sky-blue : #8efbe7;
+  --bright-yellow : #fdff86;
+  --bright-green : #aeff90;
+  --bright-orange : #ffa239;
+  --bright-red : #f95c6e;
+  --bright-blue : #6048fa;
 }
 
 *{
